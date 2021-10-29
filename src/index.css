@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom,rgb(131, 105, 105), rgb(102, 102, 148));
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.weather{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+}
+.input{
+    width: 500px;
+    height: 28px;
+    margin-right: 5px;
+    border-radius: 3px ;
+    border: none;
+    box-shadow: 0px 1px 5px .1px black;
+}
+input:focus{
+    outline: none;
+}
+button{
+    padding-bottom: 2px;
+    width: 80px;
+    height: 30px;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    box-shadow: .5px .5px 3px black;
+    background-color: green;
+    font-weight: bold;
+}
+button:focus{
+    cursor: pointer;
+    background-color: rgb(21, 151, 32);
+}
+.container{
+    background-image: linear-gradient(to bottom,rgb(131, 105, 105));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.city, .cityStatus{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 5px;
+}
+.time{
+    font-size: 20px;
+}
+.cityName{
+    font-weight: bold;
+}
+.tem{
+    font-weight: bolder;
+    font-size: 50px;
+}
+.temp{
+    background-color: rgba(233, 176, 176, 0.151);
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.tempC{
+    background-color: rgba(143, 172, 240, 0.205);
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 10px;
+    border-radius: 10px;
+}
+.status{
+    text-align: center;
+}
+.fer{
+    text-align: center;
+    font-weight: bold;
 }
